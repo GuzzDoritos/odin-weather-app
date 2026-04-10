@@ -1,21 +1,21 @@
 {
-  "name": "webpack-template",
+  "name": "odin-weather-app",
   "version": "1.0.0",
-  "description": "Base template for my webpack projects",
+  "description": "An app for weather",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuzzDoritos/webpack-template.git"
+    "url": "git+https://github.com/GuzzDoritos/odin-weather-app.git"
   },
   "author": "GuzzDoritos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuzzDoritos/webpack-template/issues"
+    "url": "https://github.com/GuzzDoritos/odin-weather-app/issues"
   },
-  "homepage": "https://github.com/GuzzDoritos/webpack-template#readme",
+  "homepage": "https://github.com/GuzzDoritos/odin-weather-app#readme",
   "dependencies": {
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
