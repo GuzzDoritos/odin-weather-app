@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: beige;
+    display: flex;
+    height: 100vh;
+}
+
+#main-wrapper {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(219, 219, 204);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.content {
+    height: 600px;
+    width: 500px;
+    display: flex;
+}
+
+#kanji {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+span {
+    writing-mode: vertical-rl;
+    border: 2px solid black;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    font-family: Yu Mincho;
+    height: 200px;
+    width: 200px;
+    font-size: 5em;
+    user-select: none;
+}
