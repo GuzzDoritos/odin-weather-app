@@ -58,15 +58,13 @@ body {
     writing-mode: vertical-rl;
     border: 2px solid var(--textColor);
     border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
     font-family: Yu Mincho;
     height: 200px;
     width: 200px;
-    font-size: 8em;
     user-select: none;
+    
+    display: grid;
+    place-items: center;
 }
 
 .temperature-info {
@@ -89,8 +87,10 @@ body {
 .temp-item > span {
     font-size: 2em;
     display: flex;
+    justify-content: end;
     align-items: center;
     height: 100%;
+    width: 135px;
     vertical-align: middle;
     font-weight: 800;
     margin-inline: 10px;
