@@ -1,7 +1,7 @@
 import maringa from "../maringa.json";
 
 export default function transformData(dataJson) {
-    const transformedData = {
+    const data = {
         address: dataJson.address,
         description: dataJson.description,
         currentConditions: {
@@ -17,6 +17,6 @@ export default function transformData(dataJson) {
             sunset: dataJson.currentConditions.sunset
         }
     };
-    console.log(transformedData);
-    return transformData;
+    console.log(data);
+    return data;
 };
