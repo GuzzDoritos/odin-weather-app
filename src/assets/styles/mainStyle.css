@@ -1,6 +1,32 @@
+:root {
+    --bgColor: #3a4750;
+    --contentBgColor: #be3144;
+    --borderColor: #3d151b;
+    --textColor: #d3d6db;
+}
+
+@font-face {
+    font-family: 'kleeone';
+    src: url('../fonts/kleeone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yujiboku';
+    src: url('../fonts/YujiBoku-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'yujiboku' !important;
+}
+
 body {
     margin: 0;
-    background-color: beige;
+    background-color: var(--bgColor);
+    color: var(--textColor);
     display: flex;
     height: 100vh;
 }
@@ -8,15 +34,17 @@ body {
 #main-wrapper {
     max-width: 500px;
     margin: auto;
-    background-color: rgb(219, 219, 204);
+    background-color: var(--contentBgColor);
     border-radius: 50px;
     padding: 20px;
+    border: 2px var(--borderColor) solid;
 }
 
 .content {
     height: 600px;
     width: 500px;
     display: flex;
+    flex-direction: column;
 }
 
 #kanji {
@@ -26,9 +54,9 @@ body {
     justify-content: center;
 }
 
-span {
+#kanji > span {
     writing-mode: vertical-rl;
-    border: 2px solid black;
+    border: 2px solid var(--textColor);
     border-radius: 999px;
     display: flex;
     justify-content: center;
@@ -37,6 +65,33 @@ span {
     font-family: Yu Mincho;
     height: 200px;
     width: 200px;
-    font-size: 5em;
+    font-size: 8em;
     user-select: none;
+}
+
+.temperature-info {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.temperature-info > ul {
+    padding: 0;
+    list-style: none;
+}
+
+.temp-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.temp-item > span {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
+    font-weight: 800;
+    margin-inline: 10px;
 }
