@@ -20,3 +20,7 @@ export default function transformData(dataJson) {
     console.log(data);
     return data;
 };
+
+export function convertToCelcius(f) {
+    return Math.round((f - 32) * 5 / 9);
+};
