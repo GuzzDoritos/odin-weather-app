@@ -79,7 +79,7 @@ body {
     border-radius: 999px;
 }
 
-.kanji-text {
+#kanji-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ body {
     writing-mode: vertical-rl;
     font-size: clamp(1rem, 4vw, 4rem);
     line-height: 1.3ch;
-    text-align: center;
+    text-align: start;
 }
 
 .future-conditions-icon {
