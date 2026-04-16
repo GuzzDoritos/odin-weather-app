@@ -22,7 +22,7 @@
             <div class="today-conditions-wrapper-grid">
                 <div class="today-conditions-icon">
                     <div class="kanji-icon-wrapper">
-                        <div class="kanji-text">晴れ</div>
+                        <div id="kanji-text">晴れ</div>
                     </div>
                 </div>
 
@@ -32,10 +32,10 @@
                         <div class="today-conditions-info-list">
                             <ul>
                                 <li>
-                                    最高：21°c
+                                    最高：<span id="kyou-no-saikou"></span>°c
                                 </li>
                                 <li>
-                                    最低：15°c
+                                    最低：<span id="kyou-no-saitei"></span> °c
                                 </li>
                             </ul>
                         </div>
@@ -55,15 +55,19 @@
                                     </thead>
                                     <tr>
                                         <td>00-06</td>
-                                        <td>20%</td>
+                                        <td><span id="jikan-1"></span>%</td>
                                     </tr>
                                     <tr>
-                                        <td>00-06</td>
-                                        <td>20%</td>
+                                        <td>06-12</td>
+                                        <td><span id="jikan-2"></span>%</td>
                                     </tr>
                                     <tr>
-                                        <td>00-06</td>
-                                        <td>20%</td>
+                                        <td>12-18</td>
+                                        <td><span id="jikan-3"></span>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18-24</td>
+                                        <td><span id="jikan-4"></span>%</td>
                                     </tr>
                                 </tbody>
                             </table>
