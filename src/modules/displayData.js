@@ -19,17 +19,4 @@ const domObj = {
 // }
 
 export default function displayData() {
-    const data = transformData(maringa);
-    
-    domObj.saikou.textContent = data.days[0].feelslikemax;
-    domObj.saitei.textContent = data.days[0].feelslikemin;
-    // domObj.kanji.textContent = convertIconToKanji(data.days[0].icon)
-    domObj.kanji.textContent = "時々曇り"
-
-    const el = domObj.kanji;
-    const len = el.textContent.trim().length;
-
-    if (len === 1) el.style.fontSize = '8em';
-    else if (len === 2) el.style.fontSize = "6em";
-    else el.style.fontSize = '3em';
 };
