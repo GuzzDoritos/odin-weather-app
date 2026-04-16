@@ -22,6 +22,8 @@
 * {
     font-family: 'yujiboku' !important;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -36,8 +38,8 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr;
     width: 100%;
-    margin: 30px;
     gap: 20px;
+    text-align: center;
 }
 
 .search-box-wrapper {
@@ -78,13 +80,23 @@ body {
 }
 
 .kanji-text {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 70.71%;
     width: 70.71%;
     writing-mode: vertical-rl;
-    font-size: 3em;
+    font-size: clamp(1rem, 4vw, 4rem);
+    line-height: 1.3ch;
     text-align: center;
-    align-content: center;
+}
+
+.future-conditions-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    font-size: clamp(1rem, 2.5vw, 3rem);
 }
 
 .today-conditions-info-grid {
@@ -95,12 +107,55 @@ body {
     padding: 10px;
 }
 
+.today-conditions-info-cell {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border: 1px solid white;
+}
+
+.today-conditions-info-title {
+    font-size: clamp(1rem, 1.5vw, 4rem);
+}
+
+.today-conditions-info-list {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
 .future-conditions-wrapper {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.future-conditions-title {
+    font-size: clamp(0.5rem, 1.1vw, 3rem);
 }
 
 .future-conditions-board {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.future-condition-day-grid {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.future-conditions-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.future-title {
+    font-weight: bold;
+}
+
+#tenki-info {
+    writing-mode: vertical-rl;
+    margin: auto;
 }
