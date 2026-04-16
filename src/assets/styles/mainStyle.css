@@ -21,6 +21,7 @@
 
 * {
     font-family: 'yujiboku' !important;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,67 +32,75 @@ body {
     height: 100vh;
 }
 
-#main-wrapper {
-    max-width: 500px;
-    margin: auto;
-    background-color: var(--contentBgColor);
-    border-radius: 50px;
-    padding: 20px;
-    border: 2px var(--borderColor) solid;
-}
-
-.content {
-    height: 600px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-}
-
-#kanji {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: center;
-}
-
-#kanji > span {
-    writing-mode: vertical-rl;
-    border: 2px solid var(--textColor);
-    border-radius: 999px;
-    font-family: Yu Mincho;
-    height: 200px;
-    width: 200px;
-    user-select: none;
-    
+.main-wrapper-grid {
     display: grid;
-    place-items: center;
+    grid-template-rows: 1fr 3fr;
+    width: 100%;
+    margin: 30px;
+    gap: 20px;
 }
 
-.temperature-info {
-    text-align: center;
-    font-size: 1.5em;
+.search-box-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
+    padding: 10px;
 }
 
-.temperature-info > ul {
-    padding: 0;
-    list-style: none;
+.tenki-info-wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
 }
 
-.temp-item {
+.today-conditions-wrapper-grid {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.today-conditions-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
 }
 
-.temp-item > span {
-    font-size: 2em;
+.kanji-icon-wrapper {
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 135px;
-    vertical-align: middle;
-    font-weight: 800;
-    margin-inline: 10px;
+    width: fit-content;
+    aspect-ratio: 1 / 1;
+    border: 2px solid white;
+    border-radius: 999px;
+}
+
+.kanji-text {
+    background-color: red;
+    height: 70.71%;
+    width: 70.71%;
+    writing-mode: vertical-rl;
+    font-size: 3em;
+    text-align: center;
+    align-content: center;
+}
+
+.today-conditions-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.future-conditions-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.future-conditions-board {
+    display: grid;
+    grid-auto-flow: column;
 }
