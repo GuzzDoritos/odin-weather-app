@@ -1,6 +1,8 @@
 [ ] finish todays conditions component
     [x] saikou and saitei temps
     [x] 降水確率
+    [ ] 最大風速
+    [ ] 太陽
 [ ] 10 days board
 [ ] F°/C° toggle
 [ ] search functionality
