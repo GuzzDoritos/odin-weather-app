@@ -2,6 +2,7 @@
     [x] saikou and saitei temps
     [x] 降水確率
 [ ] 10 days board
+[ ] F°/C° toggle
 [ ] search functionality
 [ ] loading state
 [ ] maybe more data
