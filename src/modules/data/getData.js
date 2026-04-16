@@ -20,10 +20,10 @@ export default async function getData(cityStr) {
     remove:visibility,
     remove:windgust,
     remove:windspeed
-    &include=days,current,alerts
+    &include=days,hours,current,alerts
     &key=${API_KEY}
     &contentType=json
-    &lang=ja`
+    &lang=ja`.replaceAll(' ', '');
     try {
         const response = await fetch(query);
         const dataJson = await response.json();
