@@ -1,6 +1,14 @@
-export default domObj = {
-    searchInput: document.getElementById('search-box-input'),
-    saikou: document.getElementById("saikou"),
-    saitei: document.getElementById("saitei"),
-    kanji: document.querySelector("#kanji > span")
+const d = document
+
+export const domObj = {
+    searchInput: d.getElementById('search-box-input'),
+    todayConditions: {
+        kanjiText: d.querySelector("#kanji-text"),
+        kyouNoSaikou: d.getElementById("kyou-no-saikou"),
+        kyouNoSaitei: d.getElementById("kyou-no-saitei"),
+        jikan1: d.getElementById("jikan-1"),
+        jikan2: d.getElementById("jikan-2"),
+        jikan3: d.getElementById("jikan-3"),
+        jikan4: d.getElementById("jikan-4"),
+    }
 }
