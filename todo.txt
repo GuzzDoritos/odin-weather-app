@@ -1,1 +1,7 @@
-- Work out the HTML template for showing the data, and figure out how it's gonna work in modules/displayData.js
+[ ] finish todays conditions component
+    [x] saikou and saitei temps
+    [x] 降水確率
+[ ] 10 days board
+[ ] search functionality
+[ ] loading state
+[ ] maybe more data
