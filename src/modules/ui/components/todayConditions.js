@@ -2,7 +2,6 @@ import maringa from '/src/maringa.json'
 import { domObj } from '../helpers/domObj.js';
 import convertIconToKanji from '../helpers/convertIconToKanji.js';
 
-
 export default function todayConditions(data) {
     setKanjiIcon(data)
     setTemperatures(data)
@@ -36,6 +35,12 @@ function setRainProbability(data) {
     tC.jikan4.textContent = averages[3];
 }
 
+function setWindSpeed(data) {
+    const tC = domObj.todayConditions;
+
+    tC.
+}
+
 function getAverages(hours) {
     let currentValues = []
     let averages = []
@@ -48,4 +53,10 @@ function getAverages(hours) {
     }
 
     return averages
+}
+
+function getWindDirections(deg) {
+         if (deg >= 0 && deg < 22.5)  return Direction.NORTH;
+    else if (deg >= 22.5 && deg < 67.5) return Direction.NORTHEAST;
+    else if (deg >= 67.5 && deg < 112.5)
 }

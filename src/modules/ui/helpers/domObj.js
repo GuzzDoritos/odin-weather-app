@@ -10,5 +10,6 @@ export const domObj = {
         jikan2: d.getElementById("jikan-2"),
         jikan3: d.getElementById("jikan-3"),
         jikan4: d.getElementById("jikan-4"),
+        saidaifuusoku: d.getElementById()
     }
 }
